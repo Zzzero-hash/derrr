@@ -65,7 +65,7 @@ DERRR exists to turn that random grab bag into something closer to a real system
 - one bounded move at a time
 - direct review before more execution
 - explicit restart points instead of wandering patch soup
-- reproducible outcomes instead of folklore
+- fewer haunted little mysteries per square foot
 
 ### The anti-magic pitch
 
@@ -110,27 +110,27 @@ It will make them easier to inspect, easier to discuss honestly, and harder to a
 ### The value, very directly
 
 ```text
-random grab bag of symptoms
+random goblin sack of symptoms
         ↓
-logs, artifacts, counters, and guesses all disagree
+logs, artifacts, counters, and human hunches all start fistfighting
         ↓
 DERRR forces one narrow question and one bounded move
         ↓
 review says what actually changed
         ↓
-next move comes from evidence, not improv
+next move comes from evidence, not caffeine improv
         ↓
-system becomes more reproducible, explainable, and less haunted
+system becomes less cursed, more legible, and slightly less stupid
 ```
 
 ### DERRR dashboard
 
 ```text
-DEBUGGING STYLE        vibes      →      evidence
-WORK UNIT              vague blob →      narrow slice
-TEAM MEMORY            folklore   →      restart artifact
-SYSTEM STATE           haunted    →      explainable enough
-SUCCESS CRITERION      felt good  →      proved in review
+DEBUGGING STYLE        vibes goblin   →   evidence goblin with clipboard
+WORK UNIT              screaming blob →   narrow slice
+TEAM MEMORY            cave rumor     →   restart artifact
+SYSTEM STATE           cursed raccoon →   legible raccoon
+SUCCESS CRITERION      "seems fine?"  →   proved in review
 ```
 
 ---
@@ -219,7 +219,7 @@ restart   [#####.....]  next move becomes obvious
 </tr>
 </table>
 
-**Same messy system. Less folklore, more outcomes.**
+**Same messy system. Fewer cursed surprises, more repeatable wins.**
 
 > [!NOTE]
 > DERRR does not promise perfect models.
