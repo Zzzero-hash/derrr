@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <strong>From black-box AI behavior to evidence-backed improvement loops.</strong>
+  <strong>Turns random AI gremlin behavior into a reproducible improvement loop.</strong>
 </p>
 
 <div align="center">
@@ -32,14 +32,44 @@
 │ DERRR                                                        │
 │ Document → Execute → Review → Research → Restart            │
 │                                                              │
-│ Stop guessing. Narrow the slice. Leave receipts.             │
+│ from "model did some weird nonsense again"                  │
+│ to "we know what failed, where, and what to do next"        │
 └──────────────────────────────────────────────────────────────┘
 ```
 
 </div>
 
 > [!TIP]
-> **DERRR is for when behavior is weird, evidence is thin, and "just tweak it" is how teams make things worse.**
+> **DERRR is for when the model is freelancing, the logs are a mess, and everyone is one more bad patch away from inventing a fake explanation.**
+
+## Why people need this
+
+Models are great at a few things, including:
+- sounding confident while being wrong
+- failing in slightly different ways every time
+- turning one bug into three competing theories
+- making teams say "maybe it's the prompt?" for the ninth time
+- producing just enough success to keep bad debugging habits alive
+
+DERRR exists to turn that random grab bag into something closer to a real system:
+- one active slice at a time
+- one bounded move at a time
+- direct review before more execution
+- explicit restart points instead of wandering patch soup
+- reproducible outcomes instead of folklore
+
+### The anti-magic pitch
+
+If your current workflow is:
+- vibes
+- screenshots
+- half-read logs
+- one lucky prompt edit
+- two accidental regressions
+- a Slack message claiming it is fixed
+
+that is not a system.
+That is a campfire story with latency.
 
 ---
 
@@ -67,6 +97,22 @@ That is the bar here. Not tidy theory. Not framework cosplay. A way to make AI s
 
 DERRR will not make hard systems easy.
 It will make them easier to inspect, easier to discuss honestly, and harder to accidentally bullsh*t yourself about.
+
+### The value, very directly
+
+```text
+random grab bag of symptoms
+        ↓
+logs, artifacts, counters, and guesses all disagree
+        ↓
+DERRR forces one narrow question and one bounded move
+        ↓
+review says what actually changed
+        ↓
+next move comes from evidence, not improv
+        ↓
+system becomes more reproducible, explainable, and less haunted
+```
 
 ---
 
@@ -130,9 +176,11 @@ restart   [#####.....]  next move becomes obvious
 ### Without DERRR
 
 - weird failure shows up
-- three people guess at once
+- somebody says "maybe temperature?"
+- somebody else says "maybe the parser"
 - logs get sampled halfway
 - two patches land together
+- the model behaves for six minutes and everyone declares victory
 - nobody knows what actually fixed it
 - next regression gets treated like a brand new mystery
 
@@ -146,12 +194,17 @@ restart   [#####.....]  next move becomes obvious
 - review artifact says what proved, failed, or stayed weird
 - research names the next real bottleneck
 - restart closes the slice and opens the successor cleanly
+- improvement becomes reproducible instead of anecdotal
 
 </td>
 </tr>
 </table>
 
-**Same messy system. Much better loop.**
+**Same messy system. Less folklore, more outcomes.**
+
+> [!NOTE]
+> DERRR does not promise perfect models.
+> It promises a better way to deal with models when they do weird, slippery, annoying model stuff.
 
 ## Start here
 
