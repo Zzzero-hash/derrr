@@ -26,6 +26,9 @@ Simple nesting:
 
 Do not execute before the active slice is recorded in the chosen control surface.
 
+This skill is for live improvement loops with real behavioral uncertainty.
+If the task is a trivial one-file fix, use a simpler workflow.
+
 ## First question
 
 Ask one setup question first:
@@ -159,3 +162,9 @@ If one appears, pause and decide whether the current slice should be reviewed, s
 ## Worked example
 
 Read `references/worked-example-hold-collapse.md` for a concrete example drawn from a real behavior-improvement loop.
+
+## v0.1 note
+
+This is a first real draft.
+It is meant to be useful, not grand.
+If the skill starts adding more ceremony than clarity, tighten the loop instead of defending the method.

@@ -39,13 +39,15 @@ DERRR is not:
 
 ## Why this repo exists
 
-This repo exists because DERRR has now reached a meaningful threshold:
+This repo exists because DERRR has crossed the line from idea to working method:
 - a formal method design exists
 - a first skill draft exists
 - the skill draft has been reviewed and pressure-tested
-- the method has already produced a better conclusion in a live multi-machine agent-improvement loop
+- the method has already changed a real live investigation for the better
 
-In particular, DERRR was used to avoid a wrong fix by narrowing a supposed “audit hole” into the more accurate question of thin fallback artifacts with lost failure context.
+In particular, DERRR was used to avoid a wrong fix by narrowing a supposed audit hole into the more accurate question of thin fallback artifacts with lost failure context.
+
+That is the standard for this repo: not tidy theory, but a method that helps you become less wrong on live systems.
 
 ## Current maturity
 
@@ -54,14 +56,15 @@ This is **v0.1**.
 That means:
 - the method is real
 - the first skill draft is usable
-- the loop has at least one successful real-world validation
+- the loop has at least one real-world validation
 - the project is still intentionally lean
+- rough edges are expected
 
 ## Repo structure
 
 - `docs/derrr-formal-design.md` — formal method design
 - `skill/` — first packaged-skill candidate and supporting references/templates
-- `examples/` — real worked example material
+- `examples/` — worked example material from a real loop
 - `dist/` — generated packaged skill artifacts when useful
 
 ## Operating idea
@@ -82,9 +85,17 @@ The control surface can vary:
 - Obsidian / vault notes
 - Plane full lifecycle mode
 
+Plane is a supported operating mode, not a required dependency.
+
+## How to read this repo
+
+- start with `docs/derrr-formal-design.md` if you want the full method
+- look at `skill/` if you want the practical agent-facing version
+- read `examples/` if you want proof that this was shaped by real use rather than pure invention
+
 ## Current next step
 
-Use the first draft skill on additional real loops and tighten the method only where observed misuse or failure justifies it.
+Use the first draft skill on additional real loops and tighten the method only where observed misuse, drift, or confusion justifies it.
 
 ## Motto
 

@@ -3,7 +3,8 @@
 ## Status
 
 This document defines the DERRR method as a formal design.
-It is still pre-packaging and pre-SKILL, but the core mechanics are treated as stable enough to specify directly.
+It is deliberately richer than the packaged skill and should be read as the full method note for v0.1.
+The core mechanics are stable enough to publish, but the method is still expected to sharpen through further real use.
 
 ## 1. Purpose
 
@@ -46,6 +47,9 @@ The loop is not merely mnemonic. Each phase has a distinct control role.
 DERRR optimizes for trustworthy iteration, not raw speed.
 A narrow slice is preferable to a broad speculative change.
 
+However, narrowness is not a license for endless local drilling.
+Once enough evidence exists to establish that a failure or constraint is real, the loop should prefer the next causally important forward step unless deeper drilling is the only credible next move.
+
 ### 3.2 Source-of-truth explicitness
 
 The control surface for the current loop must be explicit.
@@ -70,6 +74,16 @@ Closure and successor creation must be explicit.
 
 DERRR forbids scope expansion by implication.
 Each new frontier requires a new slice.
+
+### 3.7 Forward-progress bias
+
+DERRR should not over-invest in ever-finer characterization once a failure is already well established.
+After the loop has enough evidence to prove a real failure or constraint exists, it should bias toward the next forward-moving slice unless:
+- a blocker prevents progress,
+- a rival explanation still makes the current conclusion unstable, or
+- the proposed next step would be reckless without the deeper drill-down.
+
+This means drill-down is justified when it unlocks action, not merely because another layer of detail is available.
 
 ## 4. Canonical Terms
 
@@ -229,6 +243,7 @@ The operator has a direct read on the effect of the last action and can classify
 
 ### Objective
 Investigate unresolved behavior, rival explanations, or next-bottleneck questions.
+Research exists to unlock the next justified move, not to endlessly deepen the current one.
 
 ### Allowed operations
 - trace code paths
@@ -244,6 +259,8 @@ Investigate unresolved behavior, rival explanations, or next-bottleneck question
 
 ### Exit criterion
 The operator either has enough evidence to open a new implementation slice or has learned that the current frontier remains unresolved and needs a further research slice.
+
+If a failure is already established and the remaining drill-down would not change the next move, DERRR should prefer forward progress over further local characterization.
 
 ## 8.5 Restart
 
@@ -400,6 +417,7 @@ DERRR should encode explicit anti-drift rules, including:
 - do not treat helper agents as control-layer replacements
 - do not imply successor work only in chat
 - do not close a slice mentally without recording it
+- do not keep drilling into an already-proven failure unless that deeper drill-down is the blocker to the next justified move
 
 ## 14. Method Failure Modes
 
@@ -433,17 +451,35 @@ DERRR does not attempt to be:
 - a generic debugging skill for every bug
 - a benchmark or tuning framework
 
-## 17. Future Packaging Boundary
+## 17. Open Design Adjustment
 
-This formal design is richer than an eventual SKILL.md should be.
+A newly observed design adjustment is still needed:
+- DERRR needs a stronger explicit rule for when to stop drilling down and resume forward progress.
 
-When packaged as a skill, the design should be reduced into:
+Current intended direction:
+- once the loop has enough evidence to prove a failure exists, it should continue forward unless deeper drilling is the next real blocker-clearing action
+- this should eventually be reflected in the skill wording, likely as a research-phase guardrail and a stop-signal against over-characterizing already-established failure modes
+
+A further architectural idea is now on the table:
+- a lightweight independent auditor at Restart could block an ordinary restart when the loop is about to continue incorrectly
+- that block would route into an isolated exception path, tentatively thought of as a drill-down mode
+- drill-down mode would run in a bounded context, resolve the deeper local contradiction or context problem, and then return a compressed handoff back to the main loop
+- this would preserve DERRR as the main operational loop while preventing silent endless drilling inside the primary context
+
+This is intentionally noted here as future work rather than treated as a requirement for v0.1.
+
+## 18. Packaging Boundary
+
+This formal design is intentionally richer than the packaged SKILL.md.
+
+For v0.1, the packaged skill should remain lighter and more operational than this document.
+It should reduce the design into:
 - a concise SKILL.md
 - mode-specific reference docs
 - concrete templates and examples
 - explicit trigger and skip boundaries
 
-## 18. Positioning
+## 19. Positioning
 
 ### One-line positioning
 
