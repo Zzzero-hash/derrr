@@ -25,6 +25,22 @@
   <strong>From black-box AI behavior to evidence-backed improvement loops.</strong>
 </p>
 
+<div align="center">
+
+```text
+┌──────────────────────────────────────────────────────────────┐
+│ DERRR                                                        │
+│ Document → Execute → Review → Research → Restart            │
+│                                                              │
+│ Stop guessing. Narrow the slice. Leave receipts.             │
+└──────────────────────────────────────────────────────────────┘
+```
+
+</div>
+
+> [!TIP]
+> **DERRR is for when behavior is weird, evidence is thin, and "just tweak it" is how teams make things worse.**
+
 ---
 
 ## Why DERRR exists
@@ -41,11 +57,16 @@ DERRR exists to push that in a more scientific direction:
 - live chain context instead of isolated prompt snapshots
 - narrow, auditable slices instead of speculative patch piles
 
-In plain English: DERRR tries to turn "the model did something amazing once" into a repeatable research and improvement process.
+In plain English, DERRR tries to turn "the model did something amazing once" into a repeatable research and improvement process.
 
 A real example: DERRR helped avoid a wrong fix by narrowing a supposed audit hole into the more accurate question of **thin fallback artifacts with lost failure context**.
 
 That is the bar here. Not tidy theory. Not framework cosplay. A way to make AI system improvement more evidence-based, more explainable, and a lot less hand-wavy.
+
+### The promise
+
+DERRR will not make hard systems easy.
+It will make them easier to inspect, easier to discuss honestly, and harder to accidentally bullsh*t yourself about.
 
 ---
 
@@ -57,6 +78,16 @@ Document -> Execute -> Review -> Research -> Restart
     |____________________________________________|
 
 aka: stop guessing, do one thing, check it, learn something, begin again
+```
+
+### DERRR signal trace
+
+```text
+chaos     [########..]  symptoms everywhere, confidence nowhere
+slice     [###.......]  one narrow question, finally
+evidence  [######....]  logs, artifacts, measurements, comparisons
+clarity   [########..]  wrong theories die here
+restart   [#####.....]  next move becomes obvious
 ```
 
 <table>
@@ -90,36 +121,103 @@ aka: stop guessing, do one thing, check it, learn something, begin again
 
 ---
 
-## Quick start paths
+## Before / After
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Without DERRR
+
+- weird failure shows up
+- three people guess at once
+- logs get sampled halfway
+- two patches land together
+- nobody knows what actually fixed it
+- next regression gets treated like a brand new mystery
+
+</td>
+<td width="50%" valign="top">
+
+### With DERRR
+
+- active slice gets recorded first
+- one narrow move gets executed
+- review artifact says what proved, failed, or stayed weird
+- research names the next real bottleneck
+- restart closes the slice and opens the successor cleanly
+
+</td>
+</tr>
+</table>
+
+**Same messy system. Much better loop.**
+
+## Start here
+
+If you only remember three things, remember these:
+
+1. **Record the active slice before you touch the system.**
+2. **Change one narrow thing at a time.**
+3. **Do not call it progress until the review artifact says what actually happened.**
+
+## Choose your mode
 
 <table>
   <tr>
-    <td>📝 <strong>I want the lightest version</strong></td>
-    <td>Use plain Markdown. No dashboard, no platform, no ceremony. Just notes, slices, and receipts.</td>
+    <th align="left">Mode</th>
+    <th align="left">Best for</th>
+    <th align="left">Start here</th>
   </tr>
   <tr>
-    <td>🧠 <strong>I want the full method</strong></td>
-    <td>Read <a href="./docs/derrr-formal-design.md"><code>docs/derrr-formal-design.md</code></a>.</td>
+    <td>📝 <strong>Markdown</strong></td>
+    <td>solo work, low ceremony, repo-native notes</td>
+    <td>use plain Markdown files and the templates in <a href="./skill/"><code>skill/</code></a></td>
   </tr>
   <tr>
-    <td>🤖 <strong>I want the practical agent-facing version</strong></td>
-    <td>Open <a href="./skill/"><code>skill/</code></a>.</td>
+    <td>🧠 <strong>Obsidian / Vault</strong></td>
+    <td>people who already live in a note vault</td>
+    <td>read the vault-oriented docs in the skill references</td>
   </tr>
   <tr>
-    <td>🔬 <strong>I want proof this came from real use</strong></td>
-    <td>Read <a href="./examples/"><code>examples/</code></a>.</td>
+    <td>📋 <strong>Plane Full</strong></td>
+    <td>explicit lifecycle tracking, auditable slices, stronger control surface</td>
+    <td>read <a href="./docs/derrr-formal-design.md"><code>docs/derrr-formal-design.md</code></a> and the Plane install notes</td>
   </tr>
   <tr>
-    <td>⚡ <strong>I want the short pitch</strong></td>
-    <td>DERRR is what you use when you want to stop treating AI behavior like magic and start treating it like an observable system.</td>
+    <td>🤖 <strong>Agent-facing skill</strong></td>
+    <td>putting the method in front of an assistant instead of hoping it behaves</td>
+    <td>open <a href="./skill/"><code>skill/</code></a></td>
   </tr>
 </table>
+
+### Quick start paths
+
+- **I want the lightest version** → Use plain Markdown. No dashboard, no platform, no ceremony. Just notes, slices, and receipts.
+- **I want the full method** → Read <a href="./docs/derrr-formal-design.md"><code>docs/derrr-formal-design.md</code></a>.
+- **I want the practical agent-facing version** → Open <a href="./skill/"><code>skill/</code></a>.
+- **I want proof this came from real use** → Read <a href="./examples/"><code>examples/</code></a>.
+- **I want the short pitch** → DERRR is what you use when you want to stop treating AI behavior like magic and start treating it like an observable system.
 
 ---
 
 ## What DERRR is
 
 DERRR is a control and investigation method for improving live agent systems when ad hoc iteration is too loose and tuning is premature.
+
+### Failure patterns DERRR is meant to catch
+
+```text
+┌─ usual failure shape ─────────────────────────────────────────┐
+│ weird behavior → guess → patch → partial relief → regress    │
+│              ↘ missing evidence ↗                             │
+└───────────────────────────────────────────────────────────────┘
+
+┌─ DERRR shape ────────────────────────────────────────────────┐
+│ weird behavior → narrow slice → execute → review → restart   │
+│                         ↘ research when needed ↗             │
+└──────────────────────────────────────────────────────────────┘
+```
 
 <table>
   <tr>
@@ -153,6 +251,11 @@ DERRR is **method-first, not tool-first**.
 
 That means you do **not** need any special platform to use it.
 Markdown-only use is completely valid.
+
+> [!IMPORTANT]
+> Plane is supported, not required.
+> Obsidian is supported, not required.
+> Markdown-only is a first-class path, not the cheap version.
 
 ### Supported modes
 
@@ -202,10 +305,18 @@ Markdown-only use is completely valid.
 | [`dist/`](./dist/) | packaged skill artifacts |
 | [`README.md`](./README.md) | the fast pitch for humans who want the point before the theory |
 
+### Recommended reading order
+
+- **Just tell me what this is** → stay in this README
+- **I want the deeper method** → read `docs/derrr-formal-design.md`
+- **I want to use it with an assistant** → open `skill/`
+- **I want to see real field mileage** → open `examples/`
+
 ---
 
 ## Current maturity
 
+> [!NOTE]
 > **Status: v0.1**
 >
 > Real enough to use, early enough to still have a little duct tape showing.
@@ -223,6 +334,18 @@ This is not a giant polished platform.
 It is a sharp working method with real field mileage, now being turned into a proper public artifact.
 
 ---
+
+## Why this feels different
+
+Most process docs try to make work look tidy.
+DERRR is trying to make the investigation itself less wrong.
+
+That means it biases toward:
+- narrow slices over broad plans
+- proof over confidence
+- explicit closure over implied completion
+- restart points over wandering continuity
+- tool optionality over tool dependence
 
 ## What happens next
 
@@ -263,6 +386,26 @@ If DERRR helps you make an AI system less wrong, a star on the repo is appreciat
 
 If you want to support the work directly:
 - Buy Me a Coffee: <https://buymeacoffee.com/zero.hash>
+
+---
+
+## DERRR in one screen
+
+```text
+symptom appears
+      ↓
+record active slice
+      ↓
+make one narrow move
+      ↓
+review real evidence
+      ↓
+name what proved / failed / stayed weird
+      ↓
+research only if the next move is still unclear
+      ↓
+close cleanly, open successor, restart
+```
 
 ---
 
