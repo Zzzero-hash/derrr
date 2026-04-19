@@ -1,6 +1,10 @@
 # DERRR
 
 <p align="center">
+  <img src="./assets/derrr-header.svg" alt="DERRR header art" width="100%" />
+</p>
+
+<p align="center">
   <strong>DERRR, making your dumb agents smart 🤓</strong><br/>
   <em>A hypothesis-driven improvement loop for live or semi-live agent systems.</em>
 </p>
@@ -19,6 +23,11 @@
   <code>obsidian-optional</code>
   <code>less-wrong-maxxing</code>
   <code>MIT licensed</code>
+</p>
+
+<p align="center">
+  <img alt="README artifact check" src="https://img.shields.io/github/actions/workflow/status/Zzzero-hash/derrr/readme-artifact-check.yml?branch=main&label=readme%20artifact%20check" />
+  <img alt="Last commit" src="https://img.shields.io/github/last-commit/Zzzero-hash/derrr" />
 </p>
 
 <p align="center">
@@ -112,6 +121,16 @@ review says what actually changed
 next move comes from evidence, not improv
         ↓
 system becomes more reproducible, explainable, and less haunted
+```
+
+### DERRR dashboard
+
+```text
+DEBUGGING STYLE        vibes      →      evidence
+WORK UNIT              vague blob →      narrow slice
+TEAM MEMORY            folklore   →      restart artifact
+SYSTEM STATE           haunted    →      explainable enough
+SUCCESS CRITERION      felt good  →      proved in review
 ```
 
 ---

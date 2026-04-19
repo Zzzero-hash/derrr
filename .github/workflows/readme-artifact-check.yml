@@ -1,0 +1,20 @@
+name: README artifact check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify-readme-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify README-referenced assets exist
+        run: |
+          test -f README.md
+          grep -q "assets/derrr-header.svg" README.md
+          test -f assets/derrr-header.svg
+          test -f docs/derrr-formal-design.md
+          test -d skill
+          test -d examples
