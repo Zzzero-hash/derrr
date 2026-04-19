@@ -100,16 +100,42 @@ DERRR uses three scope units:
 
 DERRR is **method-first, not tool-first**.
 
-You can run it through:
-- Markdown
-- Obsidian / vault notes
-- Plane full lifecycle mode
+That means you do **not** need any special platform to use it.
+You can run DERRR with plain Markdown files and a repo if that is all you want.
 
-Plane is a supported operating mode, not a required dependency.
+Supported control surfaces:
+- **Markdown**: plain `.md` files in a repo or working folder
+- **Obsidian**: a popular Markdown note-taking app and vault system, useful if you already live in notes
+- **Plane**: an issue-tracking/project-management tool, useful if you want explicit lifecycle state and issue-based audit history
+
+Important:
+- **Plane is optional**
+- **Obsidian is optional**
+- **Markdown-only use is completely valid**
+
+If you want setup docs for the optional tools:
+- Obsidian docs: <https://help.obsidian.md/>
+- Plane docs: <https://developers.plane.so/api-reference/introduction>
+- Plane app: <https://plane.so/>
+- Plane API key docs: <https://developers.plane.so/api-reference/introduction>
+
+If you use Plane, the basic setup path is:
+1. install or access Plane
+2. create a workspace/project
+3. create an API key
+4. use Plane as the source of truth for active slices and lifecycle state
+
+If you use Obsidian, the basic setup path is:
+1. install Obsidian
+2. create or open a vault
+3. store DERRR notes/templates inside that vault
 
 ---
 
 ## How to read this repo
+
+### If you want the lightest starting point
+Use Markdown only and read the skill references for the Markdown quickstart.
 
 ### If you want the full method
 Start with `docs/derrr-formal-design.md`
