@@ -50,6 +50,14 @@ That is the bar here. Not tidy theory. Not framework cosplay. A way to make AI s
 
 ## The loop
 
+```text
+Document -> Execute -> Review -> Research -> Restart
+    ^                                            |
+    |____________________________________________|
+
+aka: stop guessing, do one thing, check it, learn something, begin again
+```
+
 <table>
   <tr>
     <td><strong>D</strong>ocument</td>
@@ -76,6 +84,8 @@ That is the bar here. Not tidy theory. Not framework cosplay. A way to make AI s
 ### Core rule
 
 > Do not execute before the active slice is recorded in the chosen control surface.
+>
+> In other words: no freestyling your way into fake confidence.
 
 ---
 
@@ -83,23 +93,23 @@ That is the bar here. Not tidy theory. Not framework cosplay. A way to make AI s
 
 <table>
   <tr>
-    <td><strong>I want the lightest version</strong></td>
+    <td>📝 <strong>I want the lightest version</strong></td>
     <td>Use plain Markdown. No dashboard, no platform, no ceremony. Just notes, slices, and receipts.</td>
   </tr>
   <tr>
-    <td><strong>I want the full method</strong></td>
+    <td>🧠 <strong>I want the full method</strong></td>
     <td>Read <a href="./docs/derrr-formal-design.md"><code>docs/derrr-formal-design.md</code></a>.</td>
   </tr>
   <tr>
-    <td><strong>I want the practical agent-facing version</strong></td>
+    <td>🤖 <strong>I want the practical agent-facing version</strong></td>
     <td>Open <a href="./skill/"><code>skill/</code></a>.</td>
   </tr>
   <tr>
-    <td><strong>I want proof this came from real use</strong></td>
+    <td>🔬 <strong>I want proof this came from real use</strong></td>
     <td>Read <a href="./examples/"><code>examples/</code></a>.</td>
   </tr>
   <tr>
-    <td><strong>I want the short pitch</strong></td>
+    <td>⚡ <strong>I want the short pitch</strong></td>
     <td>DERRR is what you use when you want to stop treating AI behavior like magic and start treating it like an observable system.</td>
   </tr>
 </table>
@@ -110,20 +120,29 @@ That is the bar here. Not tidy theory. Not framework cosplay. A way to make AI s
 
 DERRR is a control and investigation method for improving live agent systems when ad hoc iteration is too loose and tuning is premature.
 
-### Good fit
-- multi-step behavior failures
-- audit gaps
-- persistence mismatches
-- validator/coercion confusion
-- soak and review loops
-- repeated regressions
-
-### Bad fit
-- trivial one-file fixes
-- pure feature building with no live behavioral uncertainty
-- broad brainstorming with no active failure to narrow
-- tuning-first workflows
-- anything where you are mostly trying to look organized instead of actually learn something
+<table>
+  <tr>
+    <th align="left">Good fit</th>
+    <th align="left">Bad fit</th>
+  </tr>
+  <tr>
+    <td valign="top">
+      - multi-step behavior failures<br/>
+      - audit gaps<br/>
+      - persistence mismatches<br/>
+      - validator/coercion confusion<br/>
+      - soak and review loops<br/>
+      - repeated regressions
+    </td>
+    <td valign="top">
+      - trivial one-file fixes<br/>
+      - pure feature building with no live behavioral uncertainty<br/>
+      - broad brainstorming with no active failure to narrow<br/>
+      - tuning-first workflows<br/>
+      - anything where you are mostly trying to look organized instead of actually learn something
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -215,3 +234,12 @@ Use the first draft skill on additional real loops and tighten the method only w
 > DERRR should make you more disciplined, but more importantly, it should make you **less wrong**.
 >
 > If it ever becomes more pompous than useful, the method has failed the vibe check.
+
+```text
+less guessing
+more tracing
+less patch soup
+more evidence
+less magic
+more system
+```
