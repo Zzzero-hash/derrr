@@ -20,6 +20,10 @@
   <code>less-wrong-maxxing</code>
 </p>
 
+<p align="center">
+  <strong>From black-box AI behavior to evidence-backed improvement loops.</strong>
+</p>
+
 ---
 
 ## Why DERRR exists
@@ -77,22 +81,28 @@ That is the bar here. Not tidy theory. Not framework cosplay. A way to make AI s
 
 ## Quick start paths
 
-### 1) I want the lightest version
-Use plain Markdown.
-
-No dashboard, no platform, no ceremony. Just notes, slices, and receipts.
-
-### 2) I want the full method
-Read [`docs/derrr-formal-design.md`](./docs/derrr-formal-design.md)
-
-### 3) I want the practical agent-facing version
-Open [`skill/`](./skill/)
-
-### 4) I want proof this came from real use
-Read [`examples/`](./examples/)
-
-### 5) I want the short pitch
-DERRR is what you use when you want to stop treating AI behavior like magic and start treating it like an observable system.
+<table>
+  <tr>
+    <td><strong>I want the lightest version</strong></td>
+    <td>Use plain Markdown. No dashboard, no platform, no ceremony. Just notes, slices, and receipts.</td>
+  </tr>
+  <tr>
+    <td><strong>I want the full method</strong></td>
+    <td>Read <a href="./docs/derrr-formal-design.md"><code>docs/derrr-formal-design.md</code></a>.</td>
+  </tr>
+  <tr>
+    <td><strong>I want the practical agent-facing version</strong></td>
+    <td>Open <a href="./skill/"><code>skill/</code></a>.</td>
+  </tr>
+  <tr>
+    <td><strong>I want proof this came from real use</strong></td>
+    <td>Read <a href="./examples/"><code>examples/</code></a>.</td>
+  </tr>
+  <tr>
+    <td><strong>I want the short pitch</strong></td>
+    <td>DERRR is what you use when you want to stop treating AI behavior like magic and start treating it like an observable system.</td>
+  </tr>
+</table>
 
 ---
 
@@ -164,10 +174,13 @@ Markdown-only use is completely valid.
 
 ## Repo map
 
-- [`docs/derrr-formal-design.md`](./docs/derrr-formal-design.md) → the full method
-- [`skill/`](./skill/) → the practical agent-facing version
-- [`examples/`](./examples/) → worked example material from a real loop
-- [`dist/`](./dist/) → packaged skill artifacts
+| Path | What it is |
+| --- | --- |
+| [`docs/derrr-formal-design.md`](./docs/derrr-formal-design.md) | the full method |
+| [`skill/`](./skill/) | the practical agent-facing version |
+| [`examples/`](./examples/) | worked example material from a real loop |
+| [`dist/`](./dist/) | packaged skill artifacts |
+| [`README.md`](./README.md) | the fast pitch for humans who want the point before the theory |
 
 ---
 
@@ -183,6 +196,11 @@ That means:
 - the loop has at least one real-world validation
 - the project is intentionally lean
 - rough edges are expected
+
+### Translation
+
+This is not a giant polished platform.
+It is a sharp working method with real field mileage, now being turned into a proper public artifact.
 
 ---
 
