@@ -18,6 +18,7 @@
   <code>plane-optional</code>
   <code>obsidian-optional</code>
   <code>less-wrong-maxxing</code>
+  <code>MIT licensed</code>
 </p>
 
 <p align="center">
@@ -226,6 +227,41 @@ It is a sharp working method with real field mileage, now being turned into a pr
 ## What happens next
 
 Use the first draft skill on additional real loops and tighten the method only where observed misuse, drift, or confusion actually justifies it.
+
+---
+
+## Credibility, sources, and credit
+
+DERRR was not invented in a vacuum. It is a practical synthesis shaped by real live-loop work and by adjacent ideas from:
+- observability and tracing culture in software/systems engineering
+- scientific debugging and hypothesis-driven investigation
+- issue-driven operational workflows
+- evidence-first evaluation habits from ML and AI systems work
+
+This repo's specific DERRR framing, wording, templates, and operating loop were developed in the course of real work by Christian Penrod with agent assistance.
+
+### External tools and docs referenced in the repo
+
+- Obsidian docs: <https://help.obsidian.md/>
+- Plane app: <https://plane.so/>
+- Plane API/docs: <https://developers.plane.so/api-reference/introduction>
+
+If this repo becomes more useful over time, those references should probably grow into a more explicit acknowledgments section rather than pretending the project emerged from pure mountain-cave revelation.
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
+See [`LICENSE`](./LICENSE).
+
+---
+
+## Support
+
+If DERRR helps you make an AI system less wrong, a star on the repo is appreciated.
+
+If you want, you can also add your support link here, for example a Buy Me a Coffee link from your other repos.
 
 ---
 
