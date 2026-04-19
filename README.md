@@ -24,18 +24,23 @@
 
 ## Why DERRR exists
 
-**Because live agent improvement gets stupid fast if you do not control it.**
+**DERRR is about turning black-box AI behavior into something you can actually observe, test, and improve on purpose.**
 
-DERRR is for moments when:
-- the agent is doing something weird
-- the logs and artifacts disagree
-- everyone wants to patch three things at once
-- tuning is being suggested way too early
-- the real answer is probably "slow down, narrow it, prove it"
+A lot of AI work still runs on one-shot brilliance, lucky prompts, scattered logs, and post-hoc storytelling.
+That can feel impressive right up until the system regresses, contradicts itself, or fails in production and nobody can explain why.
+
+DERRR exists to push that in a more scientific direction:
+- deeper observability for otherwise black-box AI behavior
+- evidence over vibes
+- repeatable improvement loops instead of random heroic saves
+- live chain context instead of isolated prompt snapshots
+- narrow, auditable slices instead of speculative patch piles
+
+In plain English: DERRR tries to turn "the model did something amazing once" into a repeatable research and improvement process.
 
 A real example: DERRR helped avoid a wrong fix by narrowing a supposed audit hole into the more accurate question of **thin fallback artifacts with lost failure context**.
 
-That is the bar here. Not tidy theory. Not framework cosplay. Just a method that helps you become **less wrong** on live systems.
+That is the bar here. Not tidy theory. Not framework cosplay. A way to make AI system improvement more evidence-based, more explainable, and a lot less hand-wavy.
 
 ---
 
@@ -87,7 +92,7 @@ Open [`skill/`](./skill/)
 Read [`examples/`](./examples/)
 
 ### 5) I want the short pitch
-DERRR is what you use when "just vibe-debug it" has started costing real money, trust, or time.
+DERRR is what you use when you want to stop treating AI behavior like magic and start treating it like an observable system.
 
 ---
 
