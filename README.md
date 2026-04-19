@@ -261,7 +261,8 @@ See [`LICENSE`](./LICENSE).
 
 If DERRR helps you make an AI system less wrong, a star on the repo is appreciated.
 
-If you want, you can also add your support link here, for example a Buy Me a Coffee link from your other repos.
+If you want to support the work directly:
+- Buy Me a Coffee: <https://buymeacoffee.com/zero.hash>
 
 ---
 
