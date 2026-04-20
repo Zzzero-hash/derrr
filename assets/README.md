@@ -4,18 +4,22 @@ All assets are editable SVGs. No rasters are committed. Regenerate PNGs on deman
 
 ## Files
 
+Canonical set:
+
 ```
 assets/
-├── banner-v2.svg                     # existing repo header (do not break)
+├── banner-v2.svg                     # README header / landing image
 ├── logo/
 │   ├── derrr-logo-primary.svg        # mascot + wordmark, horizontal
-│   ├── derrr-icon.svg                # 256×256 square icon / avatar
+│   ├── derrr-icon.svg                # square icon / avatar
 │   └── derrr-logo-mono.svg           # single-color, uses currentColor
 ├── social/
 │   └── derrr-social-preview.svg      # 1280×640 Open Graph card
 └── diagrams/
-    └── derrr-loop.svg                # annotated DERRR loop
+    └── derrr-loop.svg                # loop diagram
 ```
+
+Older `derrr-header*.svg` files are legacy explorations, not the canonical pack.
 
 ## Palette
 
@@ -37,6 +41,18 @@ Palette is shared across banner, social, logo, and diagram. Don't drift without 
 - **Body / captions:** `ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter, sans-serif`.
 
 All type is live SVG `<text>` — not paths. Keep it that way so the files stay editable.
+
+## Quality bar
+
+The pack should read cleanly at a glance.
+
+Prefer:
+- fewer decorative lines and frames
+- one clear focal point per asset
+- logo details that survive small rendering
+- diagrams that explain the loop without becoming poster art
+
+If an asset feels crowded, trim it before adding more flourish.
 
 ## Mascot rules
 
