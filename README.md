@@ -10,9 +10,9 @@
 </p>
 
 <p align="center">
-  <a href="./docs/derrr-formal-design.md">Formal design</a> ·
-  <a href="./skill/">Skill</a> ·
-  <a href="./examples/">Examples</a>
+  <a href="./docs/derrr-formal-design.md">🧪 Formal design</a> ·
+  <a href="./skill/">🛠️ Skill</a> ·
+  <a href="./examples/">👹 Examples</a>
 </p>
 
 <p align="center">
@@ -53,6 +53,9 @@
 
 ## Why people need this
 
+**Suggested emoji scheme, used sparingly:** 🧪 investigation, 🛠️ implementation, 👹 cursed system behavior, 🧾 receipts, 🔁 restart
+
+
 Large codebases and agent systems are great at a few things, including:
 - hiding one real bug behind six fake ones
 - making every change feel connected to twelve other changes
@@ -67,7 +70,7 @@ DERRR exists to turn that random grab bag into something closer to a real develo
 - explicit restart points instead of wandering patch soup
 - fewer haunted little mysteries per square foot
 
-### The anti-magic pitch
+### The anti-magic pitch 👹
 
 If your current workflow is:
 - vibes
@@ -103,7 +106,7 @@ A real example: DERRR helped avoid a wrong fix by narrowing a supposed audit hol
 
 That is the bar here. Not tidy theory. Not framework cosplay. A way to make AI system improvement more evidence-based, more explainable, and a lot less hand-wavy.
 
-### The promise
+### The promise 🧾
 
 DERRR will not make hard systems easy.
 It will make them easier to inspect, easier to discuss honestly, and harder to accidentally bullsh*t yourself about.
@@ -124,7 +127,7 @@ next move comes from evidence, not caffeine improv
 system becomes less cursed, more legible, and slightly less stupid
 ```
 
-### DERRR dashboard
+### DERRR dashboard 👹
 
 ```text
 DEBUGGING STYLE        vibes goblin   →   evidence goblin with clipboard
@@ -226,7 +229,7 @@ restart   [#####.....]  next move becomes obvious
 > DERRR does not promise perfect models.
 > It promises a better way to deal with models when they do weird, slippery, annoying model stuff.
 
-## Start here
+## Start here 🛠️
 
 If you only remember three things, remember these:
 
@@ -234,7 +237,7 @@ If you only remember three things, remember these:
 2. **Change one narrow thing at a time.**
 3. **Do not call it progress until the review artifact says what actually happened.**
 
-## Choose your mode
+## Choose your mode 🔁
 
 <table>
   <tr>
