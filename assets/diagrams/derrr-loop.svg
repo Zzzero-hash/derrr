@@ -100,8 +100,9 @@
     <circle r="56" fill="#1c0e0e" stroke="#ff7b72" stroke-width="2.5"/>
     <text y="-8" text-anchor="middle" class="mono" font-size="11" fill="#4b4666">03</text>
     <text y="12" text-anchor="middle" class="mono" font-weight="900" font-size="22" fill="#ff7b72">R</text>
-    <text x="64" y="70" class="sans" font-size="18" font-weight="700" fill="#ff7b72">Review</text>
-    <text x="64" y="90" class="mono" font-size="12" fill="#8b949e">what proved, failed, stayed weird</text>
+    <text x="84" y="56" class="sans" font-size="18" font-weight="700" fill="#ff7b72">Review</text>
+    <text x="84" y="76" class="mono" font-size="12" fill="#8b949e">what proved</text>
+    <text x="84" y="92" class="mono" font-size="12" fill="#8b949e">failed, stayed weird</text>
   </g>
 
   <!-- Research (bottom-left, θ=126°) -->
@@ -109,8 +110,9 @@
     <circle r="56" fill="#1d0c18" stroke="#ff6ac1" stroke-width="2.5"/>
     <text y="-8" text-anchor="middle" class="mono" font-size="11" fill="#4b4666">04</text>
     <text y="12" text-anchor="middle" class="mono" font-weight="900" font-size="22" fill="#ff6ac1">R</text>
-    <text x="-64" y="70" text-anchor="end" class="sans" font-size="18" font-weight="700" fill="#ff6ac1">Research</text>
-    <text x="-64" y="90" text-anchor="end" class="mono" font-size="12" fill="#8b949e">unblock the next justified move</text>
+    <text x="-84" y="56" text-anchor="end" class="sans" font-size="18" font-weight="700" fill="#ff6ac1">Research</text>
+    <text x="-84" y="76" text-anchor="end" class="mono" font-size="12" fill="#8b949e">unblock the next</text>
+    <text x="-84" y="92" text-anchor="end" class="mono" font-size="12" fill="#8b949e">justified move</text>
   </g>
 
   <!-- Restart (top-left, θ=198°) -->
@@ -146,18 +148,18 @@
         fill="none" stroke="#a5a1ff" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#ah-purple)"/>
 
   <!-- optional shortcut: Review → Restart (when research is not needed) -->
-  <path d="M 602 600 Q 430 460 308 400"
+  <path d="M 592 592 Q 430 456 318 404"
         fill="none" stroke="#4b4666" stroke-width="1.8" stroke-dasharray="3 5" marker-end="url(#ah-purple)"/>
-  <text x="420" y="498" class="mono" font-size="11" fill="#6e7681" font-style="italic">
+  <text x="430" y="490" text-anchor="middle" class="mono" font-size="11" fill="#6e7681" font-style="italic">
     research optional
   </text>
 
   <!-- footer legend -->
-  <g class="mono" font-size="12" transform="translate(40 720)">
+  <g class="mono" font-size="12" transform="translate(40 714)">
     <text x="0"   y="0" fill="#6e7681">rule:</text>
-    <text x="42"  y="0" fill="#c9d1d9">do not execute before the active slice is recorded in the chosen control surface</text>
+    <text x="42"  y="0" fill="#c9d1d9">record the active slice before execution</text>
   </g>
-  <g class="mono" font-size="12" transform="translate(40 740)">
+  <g class="mono" font-size="12" transform="translate(40 736)">
     <text x="0"   y="0" fill="#6e7681">dashed:</text>
     <text x="58"  y="0" fill="#c9d1d9">restart always loops back · research is optional when review is conclusive</text>
   </g>
