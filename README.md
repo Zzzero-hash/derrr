@@ -1,7 +1,7 @@
 # DERRR
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Zzzero-hash/derrr/main/assets/derrr-header-v4.svg" alt="DERRR header art" width="100%" />
+  <img src="./assets/banner.svg" alt="DERRR — Document · Execute · Review · Research · Restart. Making your dumb agents smart." width="100%" />
 </p>
 
 <p align="center">
