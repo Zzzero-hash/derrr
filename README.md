@@ -56,6 +56,10 @@ In plain English:
 - research only when the next move is still unclear
 - restart cleanly instead of wandering into patch soup
 
+<p align="center">
+  <img src="./assets/diagrams/derrr-loop.svg" alt="The DERRR loop: Document, Execute, Review, Research, Restart, then back to Document." width="720" />
+</p>
+
 ## Why this exists
 
 A lot of AI and agent work currently runs on:
@@ -145,6 +149,22 @@ Also, yes, a drooling little goblin as the logo sounds extremely correct.
 **v0.1**
 
 Real enough to use, early enough to still have a little duct tape showing.
+
+## Brand kit
+
+Editable SVGs live under [`assets/`](./assets/):
+
+- [`assets/logo/derrr-logo-primary.svg`](./assets/logo/derrr-logo-primary.svg) — full mark with drooling clipboard goblin
+- [`assets/logo/derrr-icon.svg`](./assets/logo/derrr-icon.svg) — 256×256 square icon / avatar
+- [`assets/logo/derrr-logo-mono.svg`](./assets/logo/derrr-logo-mono.svg) — monochrome, uses `currentColor`
+- [`assets/social/derrr-social-preview.svg`](./assets/social/derrr-social-preview.svg) — 1280×640 Open Graph card
+- [`assets/diagrams/derrr-loop.svg`](./assets/diagrams/derrr-loop.svg) — the loop, annotated
+
+If you want the whole goblin bundle in one place, start with [`assets/README.md`](./assets/README.md). It has:
+- what each file is for
+- palette + mascot rules
+- export commands for PNGs
+- the exact GitHub social preview upload path
 
 ## License
 
