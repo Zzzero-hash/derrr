@@ -1,7 +1,7 @@
 # DERRR
 
 <p align="center">
-  <img src="./assets/banner-v2.svg" alt="DERRR — Document · Execute · Review · Research · Restart. Making your dumb agents smart." width="100%" />
+  <img src="https://grovextech.com/assets/derrr/banner.svg" alt="DERRR — Document · Execute · Review · Research · Restart. Making your dumb agents smart." width="100%" />
 </p>
 
 <p align="center">
@@ -57,7 +57,7 @@ In plain English:
 - restart cleanly instead of wandering into patch soup
 
 <p align="center">
-  <img src="./assets/diagrams/derrr-loop.svg" alt="The DERRR loop: Document, Execute, Review, Research, Restart, then back to Document." width="720" />
+  <img src="https://grovextech.com/assets/derrr/loop-diagram.svg" alt="The DERRR loop: Document, Execute, Review, Research, Restart, then back to Document." width="720" />
 </p>
 
 ## Why this exists
@@ -154,12 +154,17 @@ Real enough to use, early enough to still have a little duct tape showing.
 
 Editable source SVGs live under [`assets/`](./assets/):
 
-- [`assets/banner-v2.svg`](./assets/banner-v2.svg) — README / landing banner
+- [`assets/banner-v2.svg`](./assets/banner-v2.svg) — README / landing banner source
 - [`assets/logo/derrr-logo-primary.svg`](./assets/logo/derrr-logo-primary.svg) — full mark with drooling clipboard goblin
 - [`assets/logo/derrr-icon.svg`](./assets/logo/derrr-icon.svg) — square icon / avatar
 - [`assets/logo/derrr-logo-mono.svg`](./assets/logo/derrr-logo-mono.svg) — monochrome, uses `currentColor`
-- [`assets/social/derrr-social-preview.svg`](./assets/social/derrr-social-preview.svg) — 1280×640 Open Graph card
-- [`assets/diagrams/derrr-loop.svg`](./assets/diagrams/derrr-loop.svg) — the loop, annotated
+- [`assets/social/derrr-social-preview.svg`](./assets/social/derrr-social-preview.svg) — 1280×640 Open Graph card source
+- [`assets/diagrams/derrr-loop.svg`](./assets/diagrams/derrr-loop.svg) — loop diagram source
+
+Canonical hosted render targets now live at:
+- `https://grovextech.com/assets/derrr/banner.svg`
+- `https://grovextech.com/assets/derrr/loop-diagram.svg`
+- `https://grovextech.com/assets/derrr/social-preview.png`
 
 If you want the whole goblin bundle in one place, start with [`assets/README.md`](./assets/README.md). It has:
 - canonical file inventory
