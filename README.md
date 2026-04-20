@@ -142,8 +142,6 @@ Important:
 - tuning-first workflows
 - looking organized without actually learning anything
 
-Also, yes, a drooling little goblin as the logo sounds extremely correct.
-
 ## Status
 
 **v0.1**
