@@ -1,7 +1,7 @@
 # DERRR
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Zzzero-hash/derrr/main/assets/derrr-header-v3.svg" alt="DERRR header art" width="100%" />
+  <img src="https://raw.githubusercontent.com/Zzzero-hash/derrr/main/assets/derrr-header-v4.svg" alt="DERRR header art" width="100%" />
 </p>
 
 <p align="center">
