@@ -97,6 +97,18 @@ With DERRR:
 - restart closes the slice cleanly
 - next move comes from evidence instead of caffeine improv
 
+```text
+            /\         /\
+       ____/  \_______/  \____
+      /  __   /\     /\   __  \
+     /__/  \_/  \___/  \_/  \__\
+     \  \   o    ___    o   /  /
+      \__\      /___\      /__/
+         /__  .-'_'-.  __\
+        /___\_\_/ \_/_/___\     [ ] clipboard
+          /_/  /___\  \_\
+```
+
 ## Core rule
 
 > Do not execute before the active slice is recorded in the chosen control surface.
