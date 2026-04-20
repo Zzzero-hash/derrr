@@ -1,7 +1,7 @@
 # DERRR
 
 <p align="center">
-  <img src="./assets/derrr-header.svg" alt="DERRR header art" width="100%" />
+  <img src="https://raw.githubusercontent.com/Zzzero-hash/derrr/main/assets/derrr-header.svg" alt="DERRR header art" width="100%" />
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@
 </p>
 
 <p align="center">
-  <strong>Turns chaotic agent development and maintenance into a reproducible loop with receipts.</strong>
+  <strong>Turns sprawling codebase chaos and agent goblin behavior into a development loop with receipts.</strong>
 </p>
 
 <div align="center">
@@ -49,7 +49,7 @@
 </div>
 
 > [!TIP]
-> **DERRR is for when the model is freelancing, the codebase is sprawling, the logs are a mess, and everyone is one more bad patch away from inventing a fake explanation.**
+> **DERRR is for when the model is freelancing, the codebase is sprawling, the logs are a swamp, and everyone is one more cursed patch away from writing fan fiction about the root cause.**
 
 ## Why people need this
 

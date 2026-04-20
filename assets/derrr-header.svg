@@ -29,7 +29,7 @@
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#cbd5e1">
     <text x="78" y="92" font-size="28">DOCUMENT → EXECUTE → REVIEW → RESEARCH → RESTART</text>
-    <text x="80" y="132" font-size="18" fill="#94a3b8">turn chaotic agent development into a reproducible loop with receipts</text>
+    <text x="80" y="132" font-size="18" fill="#94a3b8">turn codebase chaos and agent goblin behavior into a loop with receipts</text>
   </g>
 
   <g filter="url(#glow)">
@@ -38,13 +38,13 @@
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
     <rect x="78" y="246" width="470" height="44" rx="10" fill="#111827" stroke="#475569"/>
-    <text x="98" y="274" font-size="22" fill="#e2e8f0">fewer cursed surprises, more repeatable wins</text>
+    <text x="98" y="274" font-size="22" fill="#e2e8f0">fewer cursed surprises, more goblin containment</text>
   </g>
 
   <g opacity="0.9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">
     <text x="720" y="174" fill="#e2e8f0">symptom  →  slice  →  evidence  →  restart</text>
     <text x="720" y="200" fill="#94a3b8">no vibes-only debugging</text>
-    <text x="720" y="226" fill="#94a3b8">no patch soup</text>
-    <text x="720" y="252" fill="#94a3b8">no fake closure</text>
+    <text x="720" y="226" fill="#94a3b8">no patch soup incidents</text>
+    <text x="720" y="252" fill="#94a3b8">no fake closure ceremonies</text>
   </g>
 </svg>
