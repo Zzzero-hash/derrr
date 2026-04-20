@@ -31,7 +31,7 @@
 </p>
 
 <p align="center">
-  <strong>Turns sprawling codebase chaos and agent goblin behavior into a development loop with receipts.</strong>
+  <strong>Turns sprawling codebase chaos and agent goblin behavior into an auditable development loop.</strong>
 </p>
 
 <div align="center">
@@ -53,7 +53,7 @@
 
 ## Why people need this
 
-**Suggested emoji scheme, used sparingly:** 🧪 investigation, 🛠️ implementation, 👹 cursed system behavior, 🧾 receipts, 🔁 restart
+**Suggested emoji scheme, used sparingly:** 🧪 investigation, 🛠️ implementation, 👹 cursed system behavior, 🧾 audit trail, 🔁 restart
 
 
 Large codebases and agent systems are great at a few things, including:
@@ -269,7 +269,7 @@ If you only remember three things, remember these:
 
 ### Quick start paths
 
-- **I want the lightest version** → Use plain Markdown. No dashboard, no platform, no ceremony. Just notes, slices, and receipts.
+- **I want the lightest version** → Use plain Markdown. No dashboard, no platform, no ceremony. Just notes, slices, and an audit trail.
 - **I want the full method** → Read <a href="./docs/derrr-formal-design.md"><code>docs/derrr-formal-design.md</code></a>.
 - **I want the practical agent-facing version** → Open <a href="./skill/"><code>skill/</code></a>.
 - **I want proof this came from real use** → Read <a href="./examples/"><code>examples/</code></a>.

@@ -29,7 +29,7 @@
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#cbd5e1">
     <text x="78" y="92" font-size="28">DOCUMENT → EXECUTE → REVIEW → RESEARCH → RESTART</text>
-    <text x="80" y="132" font-size="18" fill="#94a3b8">turn codebase chaos and agent goblin behavior into a loop with receipts</text>
+    <text x="80" y="132" font-size="18" fill="#94a3b8">turn codebase chaos and agent goblin behavior into an audit trail</text>
   </g>
 
   <g filter="url(#glow)">
@@ -37,8 +37,8 @@
   </g>
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <rect x="78" y="246" width="425" height="44" rx="10" fill="#111827" stroke="#475569"/>
-    <text x="98" y="274" font-size="22" fill="#e2e8f0">fewer cursed surprises, more receipts</text>
+    <rect x="78" y="246" width="445" height="44" rx="10" fill="#111827" stroke="#475569"/>
+    <text x="98" y="274" font-size="22" fill="#e2e8f0">fewer cursed surprises, more audit trail</text>
   </g>
 
   <g opacity="0.9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">
