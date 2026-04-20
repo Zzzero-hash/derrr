@@ -161,10 +161,12 @@ Editable source SVGs live under [`assets/`](./assets/):
 - [`assets/social/derrr-social-preview.svg`](./assets/social/derrr-social-preview.svg) — 1280×640 Open Graph card source
 - [`assets/diagrams/derrr-loop.svg`](./assets/diagrams/derrr-loop.svg) — loop diagram source
 
-Canonical hosted render targets now live at:
+Canonical hosted render targets live at:
 - `https://grovextech.com/assets/derrr/banner.svg`
-- `https://grovextech.com/assets/derrr/loop-diagram.svg`
+- `https://grovextech.com/assets/derrr/logo-primary.svg`
+- `https://grovextech.com/assets/derrr/icon.svg`
 - `https://grovextech.com/assets/derrr/social-preview.png`
+- `https://grovextech.com/assets/derrr/loop-diagram.svg`
 
 If you want the whole goblin bundle in one place, start with [`assets/README.md`](./assets/README.md). It has:
 - canonical file inventory
@@ -172,13 +174,6 @@ If you want the whole goblin bundle in one place, start with [`assets/README.md`
 - export commands for PNGs
 - hosted asset conventions for `grovextech.com`
 - GitHub social preview instructions
-
-Planned canonical hosted asset pattern:
-- `https://grovextech.com/assets/derrr/banner.svg`
-- `https://grovextech.com/assets/derrr/logo-primary.svg`
-- `https://grovextech.com/assets/derrr/icon.svg`
-- `https://grovextech.com/assets/derrr/social-preview.png`
-- `https://grovextech.com/assets/derrr/loop-diagram.svg`
 
 ## License
 
