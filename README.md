@@ -138,15 +138,6 @@ Important:
 - tuning-first workflows
 - looking organized without actually learning anything
 
-## Tiny emoji scheme
-
-Use sparingly:
-- 👹 cursed system behavior
-- 🧪 investigation
-- 🛠️ implementation
-- 🧾 audit trail
-- 🔁 restart
-
 Also, yes, a drooling little goblin as the logo sounds extremely correct.
 
 ## Status
