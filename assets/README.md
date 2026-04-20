@@ -4,22 +4,44 @@ All assets are editable SVGs. No rasters are committed. Regenerate PNGs on deman
 
 ## Files
 
-Canonical set:
+Canonical editable source set:
 
 ```
 assets/
-├── banner-v2.svg                     # README header / landing image
+├── banner-v2.svg                     # README header / landing image source
 ├── logo/
-│   ├── derrr-logo-primary.svg        # mascot + wordmark, horizontal
-│   ├── derrr-icon.svg                # square icon / avatar
+│   ├── derrr-logo-primary.svg        # mascot + wordmark, horizontal source
+│   ├── derrr-icon.svg                # square icon / avatar source
 │   └── derrr-logo-mono.svg           # single-color, uses currentColor
 ├── social/
-│   └── derrr-social-preview.svg      # 1280×640 Open Graph card
+│   └── derrr-social-preview.svg      # 1280×640 Open Graph card source
 └── diagrams/
-    └── derrr-loop.svg                # loop diagram
+    └── derrr-loop.svg                # loop diagram source
 ```
 
 Only the files listed above are part of the maintained pack. Legacy experiments should live outside the canonical asset set or be removed once superseded.
+
+## Canonical hosting model
+
+These repo files are the editable masters.
+
+For production use, publish stable rendered assets from the website/CDN layer so multiple repos can reuse the same brand pack without fighting GitHub SVG caching.
+
+Recommended public URL pattern on `grovextech.com`:
+
+```text
+https://grovextech.com/assets/derrr/banner.svg
+https://grovextech.com/assets/derrr/logo-primary.svg
+https://grovextech.com/assets/derrr/icon.svg
+https://grovextech.com/assets/derrr/logo-mono.svg
+https://grovextech.com/assets/derrr/social-preview.png
+https://grovextech.com/assets/derrr/loop-diagram.svg
+```
+
+Suggested rule of thumb:
+- edit in this repo
+- export or copy canonical deploy artifacts into the site repo
+- let docs and future repos reference the hosted URLs when cache stability matters
 
 ## Palette
 
@@ -104,7 +126,7 @@ inkscape assets/social/derrr-social-preview.svg \
 
 ## GitHub social preview
 
-Upload `derrr-social-preview.png` (exported from the 1280×640 SVG) via:
+Upload `derrr-social-preview.png` (exported from the 1280×640 SVG, or from the hosted canonical PNG) via:
 **Repo → Settings → General → Social preview → Upload an image**.
 
 ## Maintenance notes

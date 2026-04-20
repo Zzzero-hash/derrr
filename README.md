@@ -152,7 +152,7 @@ Real enough to use, early enough to still have a little duct tape showing.
 
 ## Brand kit
 
-Editable SVGs live under [`assets/`](./assets/):
+Editable source SVGs live under [`assets/`](./assets/):
 
 - [`assets/banner-v2.svg`](./assets/banner-v2.svg) — README / landing banner
 - [`assets/logo/derrr-logo-primary.svg`](./assets/logo/derrr-logo-primary.svg) — full mark with drooling clipboard goblin
@@ -165,7 +165,15 @@ If you want the whole goblin bundle in one place, start with [`assets/README.md`
 - canonical file inventory
 - palette + mascot rules
 - export commands for PNGs
+- hosted asset conventions for `grovextech.com`
 - GitHub social preview instructions
+
+Planned canonical hosted asset pattern:
+- `https://grovextech.com/assets/derrr/banner.svg`
+- `https://grovextech.com/assets/derrr/logo-primary.svg`
+- `https://grovextech.com/assets/derrr/icon.svg`
+- `https://grovextech.com/assets/derrr/social-preview.png`
+- `https://grovextech.com/assets/derrr/loop-diagram.svg`
 
 ## License
 
