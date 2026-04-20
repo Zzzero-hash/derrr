@@ -154,17 +154,18 @@ Real enough to use, early enough to still have a little duct tape showing.
 
 Editable SVGs live under [`assets/`](./assets/):
 
+- [`assets/banner-v2.svg`](./assets/banner-v2.svg) — README / landing banner
 - [`assets/logo/derrr-logo-primary.svg`](./assets/logo/derrr-logo-primary.svg) — full mark with drooling clipboard goblin
-- [`assets/logo/derrr-icon.svg`](./assets/logo/derrr-icon.svg) — 256×256 square icon / avatar
+- [`assets/logo/derrr-icon.svg`](./assets/logo/derrr-icon.svg) — square icon / avatar
 - [`assets/logo/derrr-logo-mono.svg`](./assets/logo/derrr-logo-mono.svg) — monochrome, uses `currentColor`
 - [`assets/social/derrr-social-preview.svg`](./assets/social/derrr-social-preview.svg) — 1280×640 Open Graph card
 - [`assets/diagrams/derrr-loop.svg`](./assets/diagrams/derrr-loop.svg) — the loop, annotated
 
 If you want the whole goblin bundle in one place, start with [`assets/README.md`](./assets/README.md). It has:
-- what each file is for
+- canonical file inventory
 - palette + mascot rules
 - export commands for PNGs
-- the exact GitHub social preview upload path
+- GitHub social preview instructions
 
 ## License
 

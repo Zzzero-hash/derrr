@@ -16,8 +16,11 @@ jobs:
       - name: Verify README-referenced assets exist
         run: |
           test -f README.md
-          grep -q "assets/derrr-header.svg" README.md
-          test -f assets/derrr-header.svg
+          grep -q "assets/banner-v2.svg" README.md
+          grep -q "assets/diagrams/derrr-loop.svg" README.md
+          test -f assets/banner-v2.svg
+          test -f assets/diagrams/derrr-loop.svg
+          test -f assets/README.md
           test -f docs/derrr-formal-design.md
           test -d skill
           test -d examples

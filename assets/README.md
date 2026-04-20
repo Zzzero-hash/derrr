@@ -19,7 +19,7 @@ assets/
     └── derrr-loop.svg                # loop diagram
 ```
 
-Older `derrr-header*.svg` files are legacy explorations, not the canonical pack.
+Only the files listed above are part of the maintained pack. Legacy experiments should live outside the canonical asset set or be removed once superseded.
 
 ## Palette
 
@@ -51,6 +51,8 @@ Prefer:
 - one clear focal point per asset
 - logo details that survive small rendering
 - diagrams that explain the loop without becoming poster art
+- simpler compositions over fragile hand-tuned spacing
+- actually dark backgrounds, not fuzzy washed-out near-black
 
 If an asset feels crowded, trim it before adding more flourish.
 
@@ -104,6 +106,12 @@ inkscape assets/social/derrr-social-preview.svg \
 
 Upload `derrr-social-preview.png` (exported from the 1280×640 SVG) via:
 **Repo → Settings → General → Social preview → Upload an image**.
+
+## Maintenance notes
+
+- Keep README-facing filenames stable unless there is a real reason to version them.
+- If GitHub caches a README SVG too aggressively, prefer replacing the reference deliberately rather than letting a pile of near-duplicate headers accumulate.
+- If you add a new canonical asset, document it here the same day.
 
 ## License
 
