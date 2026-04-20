@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>DERRR, making your dumb agents smart 🤓</strong><br/>
-  <em>A hypothesis-driven improvement loop for live or semi-live agent systems.</em>
+  <em>A hypothesis-driven development and maintenance loop for agent systems and large codebases.</em>
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@
 </p>
 
 <p align="center">
-  <strong>Turns random AI gremlin behavior into a reproducible improvement loop.</strong>
+  <strong>Turns chaotic agent development and maintenance into a reproducible loop with receipts.</strong>
 </p>
 
 <div align="center">
@@ -49,18 +49,18 @@
 </div>
 
 > [!TIP]
-> **DERRR is for when the model is freelancing, the logs are a mess, and everyone is one more bad patch away from inventing a fake explanation.**
+> **DERRR is for when the model is freelancing, the codebase is sprawling, the logs are a mess, and everyone is one more bad patch away from inventing a fake explanation.**
 
 ## Why people need this
 
-Models are great at a few things, including:
-- sounding confident while being wrong
-- failing in slightly different ways every time
-- turning one bug into three competing theories
-- making teams say "maybe it's the prompt?" for the ninth time
-- producing just enough success to keep bad debugging habits alive
+Large codebases and agent systems are great at a few things, including:
+- hiding one real bug behind six fake ones
+- making every change feel connected to twelve other changes
+- turning one weird model failure into three architecture arguments
+- producing just enough success to keep bad development habits alive
+- making teams say "maybe it's the prompt?" when the problem is actually the whole surrounding loop
 
-DERRR exists to turn that random grab bag into something closer to a real system:
+DERRR exists to turn that random grab bag into something closer to a real development system:
 - one active slice at a time
 - one bounded move at a time
 - direct review before more execution
@@ -76,27 +76,28 @@ If your current workflow is:
 - one lucky prompt edit
 - two accidental regressions
 - a Slack message claiming it is fixed
+- somebody muttering "we should probably refactor this later"
 
-that is not a system.
-That is a campfire story with latency.
+that is not a development system.
+That is a campfire story with CI attached.
 
 ---
 
 ## Why DERRR exists
 
-**DERRR is about turning black-box AI behavior into something you can actually observe, test, and improve on purpose.**
+**DERRR is about turning messy agent behavior and large-codebase development into something you can actually observe, test, and improve on purpose.**
 
-A lot of AI work still runs on one-shot brilliance, lucky prompts, scattered logs, and post-hoc storytelling.
+A lot of AI and agent work still runs on one-shot brilliance, lucky prompts, scattered logs, hand-wavy architecture decisions, and post-hoc storytelling.
 That can feel impressive right up until the system regresses, contradicts itself, or fails in production and nobody can explain why.
 
 DERRR exists to push that in a more scientific direction:
-- deeper observability for otherwise black-box AI behavior
+- deeper observability for otherwise black-box agent behavior
 - evidence over vibes
-- repeatable improvement loops instead of random heroic saves
-- live chain context instead of isolated prompt snapshots
+- repeatable development loops instead of random heroic saves
+- live chain context instead of isolated prompt snapshots or isolated code diffs
 - narrow, auditable slices instead of speculative patch piles
 
-In plain English, DERRR tries to turn "the model did something amazing once" into a repeatable research and improvement process.
+In plain English, DERRR tries to turn "the model did something amazing once" and "the codebase mostly works if you don't look at it funny" into a repeatable research and improvement process.
 
 A real example: DERRR helped avoid a wrong fix by narrowing a supposed audit hole into the more accurate question of **thin fallback artifacts with lost failure context**.
 

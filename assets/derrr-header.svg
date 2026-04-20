@@ -29,7 +29,7 @@
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#cbd5e1">
     <text x="78" y="92" font-size="28">DOCUMENT → EXECUTE → REVIEW → RESEARCH → RESTART</text>
-    <text x="80" y="132" font-size="18" fill="#94a3b8">turn random AI gremlin behavior into a reproducible improvement loop</text>
+    <text x="80" y="132" font-size="18" fill="#94a3b8">turn chaotic agent development into a reproducible loop with receipts</text>
   </g>
 
   <g filter="url(#glow)">
