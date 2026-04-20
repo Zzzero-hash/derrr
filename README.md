@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>DERRR, making your dumb agents smart 🤓</strong><br/>
-  <em>A hypothesis-driven development and maintenance loop for agent systems and large codebases.</em>
+  <em>A scientific method hypothesis-driven development and maintenance loop for agent systems and large codebases.</em>
 </p>
 
 <p align="center">
@@ -30,31 +30,31 @@
 </p>
 
 > [!TIP]
-> **DERRR is for when the model is freelancing, the codebase is sprawling, the logs are a swamp, and the team is one cursed patch away from writing fan fiction about the root cause.**
+> **DERRR is for when the model is freelancing, the codebase is sprawling, the logs are a swamp, and the team is one cursed patch away from writing writing a fabricated "prod is down because" lie.**
 
 ## What this is
 
 DERRR is a loop for developing and maintaining messy systems without lying to yourself.
 
 It is for:
-- weird agent behavior
+- Project Management and controlled dev ops instead of one shot guessing
 - large codebases with too many moving parts
 - regressions that keep coming back in new costumes
 - teams that need an actual audit trail, not vibes and folklore
 
 It is **not** just a debugging gimmick.
-It is a development and maintenance discipline for systems that get slippery under pressure.
+It is a development and maintenance discipline for systems that get slippery under pressure and ocassionally need some assistance getting back on track.
 
 ```text
 Document → Execute → Review → Research → Restart
 ```
 
 In plain English:
-- write down the active slice before touching the system
-- do one narrow thing
-- review what actually happened
-- research only when the next move is still unclear
-- restart cleanly instead of wandering into patch soup
+- write down the active slice (markdown, obsidian, plane) before touching the system
+- do one narrow thing (Test Driven Development Execution Step)
+- review what actually happened (Auditable results)
+- research only when the next move is still unclear (Hypothesize about results if evidence unclear)
+- restart cleanly instead of wandering into patch soup 
 
 <p align="center">
   <img src="https://grovextech.com/assets/derrr/loop-diagram.svg" alt="The DERRR loop: Document, Execute, Review, Research, Restart, then back to Document." width="720" />
