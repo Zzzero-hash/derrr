@@ -94,6 +94,7 @@ With DERRR:
 - active slice gets recorded first
 - one narrow move gets executed
 - review says what proved, failed, or stayed weird
+- screenshots, logs, JSON samples, and test output get treated as evidence instead of chat confetti
 - restart closes the slice cleanly
 - next move comes from evidence instead of caffeine improv
 
@@ -122,13 +123,14 @@ DERRR is **method-first, not tool-first**.
 You can use it with:
 - **Markdown** for the lightest repo-native version
 - **Obsidian** if you already live in a vault
-- **Plane** if you want explicit lifecycle state and a stronger audit trail
+- **Plane** if you want explicit lifecycle state, parent/sub-work-item structure, relations, and a stronger audit trail
 - **the skill** if you want to put the method in front of an assistant
 
 Important:
 - Plane is optional
 - Obsidian is optional
 - Markdown-only is completely valid
+- if your tracker supports hierarchy, relations, or attachments, use them instead of leaving lineage and evidence stranded in chat
 
 ## Start here
 

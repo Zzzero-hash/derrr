@@ -54,6 +54,7 @@ Once enough evidence exists to establish that a failure or constraint is real, t
 
 The control surface for the current loop must be explicit.
 The source of truth cannot remain implicit in chat history alone.
+When the control surface supports hierarchy, relations, or attachments, those structures should be used deliberately rather than recreated only in prose.
 
 ### 3.3 Layered observability
 
@@ -69,11 +70,13 @@ Agent helpers, reviewers, or workers may assist, but they do not replace the con
 
 A slice is not complete because the team has mentally moved on.
 Closure and successor creation must be explicit.
+When the tracker supports predecessor/successor or parent/child linkage, closure should preserve that structure as part of the audit trail.
 
 ### 3.6 Anti-drift discipline
 
 DERRR forbids scope expansion by implication.
 Each new frontier requires a new slice.
+If the tracker supports relations or sub-work-items, that new slice should be linked structurally instead of relying only on narrative references.
 
 ### 3.7 Forward-progress bias
 
@@ -121,6 +124,8 @@ Every slice must define:
 - success condition
 - failure or invalidation condition
 - expected restart rule
+- structural lineage when supported by the control surface (for example parent milestone, predecessor, dependency, or successor candidates)
+- expected evidence artifacts when known in advance
 
 A slice may be observational, implementation-oriented, research-oriented, review-oriented, or decision-oriented, but it should have one dominant type.
 
@@ -135,6 +140,28 @@ Primary slice types:
 
 This classification exists to prevent mixed, mushy work.
 If a slice is doing too many things at once, it should be split.
+
+### 6.1 Evidence artifacts as first-class audit material
+
+DERRR treats useful debugging artifacts as first-class evidence.
+They are not decoration or optional nice-to-haves when they materially clarify what happened.
+
+Typical artifact classes include:
+- screenshots
+- log excerpts
+- JSON samples
+- test output
+- deploy or rebuild proof
+- before/after metric snapshots
+
+For each important artifact, the loop should preserve:
+- what it is
+- what it proves, fails to prove, or leaves ambiguous
+- when it was captured
+- which slice and phase it belongs to
+
+When the control surface supports attachments or linked artifacts, use that directly.
+Otherwise preserve stable references in the slice record.
 
 ## 7. Observability Model
 
@@ -183,12 +210,15 @@ Establish the control state of the active slice before execution begins.
 - evidence target recorded
 - execution boundary recorded
 - success/failure conditions recorded
+- structural lineage recorded when supported by the control surface
+- expected evidence artifacts noted when known
 
 ### Allowed operations
 - create or update slice record
 - identify metrics and evidence sources
 - capture assumptions and blockers
 - clarify milestone alignment
+- set parent/sub-work-item structure, dependencies, and relations when supported by the control surface
 
 ### Forbidden operations
 - implementation before documentation exists
@@ -230,6 +260,7 @@ Determine what the last execution step actually did.
 - measure the direct target effect
 - capture anomalies
 - decide whether separate soak is needed
+- attach or reference evidence artifacts inside the control surface when that is supported
 
 ### Forbidden operations
 - treating weak evidence as closure
@@ -273,6 +304,7 @@ Close the current slice explicitly and create the next clean control state.
 - create explicit successor slice
 - update milestone alignment
 - reset active control state
+- preserve parent/child and predecessor/successor structure in the tracker when available
 
 ### Forbidden operations
 - implied continuation without a restart artifact
@@ -361,13 +393,19 @@ Suggested structure:
 ## 11.3 Plane Full Mode
 
 Control surface:
-- Plane issues, states, modules, and comments
+- Plane issues, states, modules, comments, parent/sub-work-item structure, relations, and attached artifacts
 
 Target user:
 - operational team or persistent multi-slice workflow
 
 Important rule:
 - Plane is a full installation mode, not a universal dependency of DERRR.
+
+Structured tracker rule:
+- use native hierarchy when available
+- use native relations and dependencies when available
+- attach or stably reference important evidence artifacts from the ticket
+- keep issue descriptions and comments understandable on their own, not only through the graph
 
 ## 12. In-Phase Infrastructure
 

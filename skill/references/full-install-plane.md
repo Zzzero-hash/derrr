@@ -17,6 +17,38 @@ Each active slice should exist as its own issue.
 Finished slices should be moved to Done.
 Active soak/review should be explicit when it matters.
 Follow-on work should be created as a successor issue, not implied only in comments.
+Use Plane parent/sub-work-item structure and relations/dependencies when available so lineage is visible in the tracker itself, not just in prose.
+
+## Structure guidance
+
+When Plane supports it in your deployment:
+- set the slice's `parent` to its milestone or umbrella issue
+- use relations for predecessor/successor and peer dependencies when they clarify the audit trail
+- prefer real tracker structure over chat-only or comment-only lineage
+- still include enough text in the issue description or comments that exported records remain understandable
+
+A good Plane slice usually makes these visible:
+- parent milestone or umbrella issue
+- predecessor slice, if this slice exists because of prior findings
+- blocked-by or blocks relationships, if applicable
+- likely successor candidates once Review or Restart sharpens the next move
+
+## Evidence artifacts
+
+Plane tickets should hold or clearly reference the artifacts that matter.
+That includes things like:
+- screenshots
+- log excerpts
+- JSON payload samples
+- failing or passing test output
+- deploy / rebuild proof
+- before / after measurements
+
+For each important artifact, note:
+- what it is
+- what it proves or fails to prove
+- when it was captured
+- which slice / phase it belongs to
 
 ## Good discipline
 
@@ -25,6 +57,8 @@ Follow-on work should be created as a successor issue, not implied only in comme
 - record implementation start before execution
 - close slices explicitly
 - create restart anchors when one phase ends and another frontier begins
+- preserve predecessor/successor links when closing and reopening work
+- attach or reference important evidence instead of leaving it stranded in chat or shell history
 
 ## Tradeoff
 

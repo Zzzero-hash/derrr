@@ -29,6 +29,9 @@ Do not execute before the active slice is recorded in the chosen control surface
 This skill is for live improvement loops with real behavioral uncertainty.
 If the task is a trivial one-file fix, use a simpler workflow.
 
+When the control surface supports structure, use the structure.
+Do not leave lineage, dependencies, or evidence only in chat when the system can carry them directly.
+
 ## First question
 
 Ask one setup question first:
@@ -53,10 +56,13 @@ Then proceed with the matching reference:
 - record the execution boundary
 - record success/failure conditions
 - name the current milestone frontier
+- record parent / child / predecessor / dependency structure when the control surface supports it
+- record expected evidence artifacts when known in advance (screenshots, logs, JSON samples, test output, deploy proof)
 
 Minimum bar before leaving Document:
 - the hypothesis must be specific enough to be tested or weakened by one bounded action
 - the evidence target must say what signal would directly change your confidence
+- if using a structured tracker such as Plane, the slice should include its parent milestone or umbrella issue and any already-known relations or dependencies
 
 Forbidden:
 - implementation before documentation exists
@@ -80,6 +86,7 @@ Forbidden:
 - inspect direct effects of the last action
 - compare expected vs observed effect
 - decide if direct evidence is sufficient or if soak is needed
+- attach or reference the concrete evidence artifacts that support the review when available
 
 Minimum bar before leaving Review:
 - the review artifact must state what the last Execute step proved, failed to prove, or made anomalous
@@ -109,6 +116,7 @@ Forbidden:
 - summarize what was learned
 - create the successor slice explicitly
 - re-check milestone alignment
+- preserve predecessor/successor linkage in the control surface when supported
 - use `assets/templates/restart-note.md` when creating the closure/restart artifact
 
 Transition rule:
@@ -133,6 +141,35 @@ Ask:
 - Where did the failure first become visible?
 - Which layer is masking or reshaping it?
 
+## Structured control surfaces
+
+When the chosen control surface supports hierarchy and relations, use them deliberately.
+
+For Plane Full mode specifically:
+- set the active slice under its parent milestone or umbrella work item when appropriate
+- add explicit relations for predecessor, successor, blocked-by, blocks, duplicate, or peer linkage when they clarify the audit trail
+- keep the ticket body or comments self-explanatory even when relations exist, so exported or copied records still make sense
+- do not rely on chat-only lineage if Plane can store it directly
+
+## Evidence artifacts
+
+Useful debugging artifacts are first-class evidence, not decoration.
+Capture and attach or link them when they materially help explain behavior.
+
+Common artifact classes:
+- screenshots
+- log excerpts
+- JSON samples
+- failing or passing test output
+- deploy or rebuild proof
+- before/after metric snapshots
+
+For each important artifact, record:
+- what it is
+- what it proves or fails to prove
+- when it was captured
+- which slice and phase it belongs to
+
 ## Human control checkpoints
 
 Ask before:
@@ -151,6 +188,8 @@ If any of these appear, stop and tighten the loop before continuing:
 - research discovers a different observability layer but tries to keep the same slice anyway
 - research discovers an adjacent same-layer issue and tries to absorb it into the same slice anyway
 - successor work exists only in chat, not in the control surface
+- hierarchy or relations exist only in prose even though the chosen tracker supports them directly
+- important screenshots, logs, or samples exist only in chat and are not referenced in the control surface
 - helper agent opinion is treated as authoritative without review
 - tuning starts before correctness is trustworthy
 - artifacts, logs, and counters disagree and no one owns the mismatch
