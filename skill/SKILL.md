@@ -26,7 +26,7 @@ Simple nesting:
 
 Do not execute before the active slice is recorded in the chosen control surface.
 
-If the control surface is Plane Full, every milestone and slice must be assigned to exactly one module before execution begins. Module assignment is mandatory because objective progress visibility depends on structurally grouped work, not just states and labels.
+If the control surface is Plane Full, every milestone and slice must be assigned to exactly one module before execution begins. Module assignment is mandatory because objective progress visibility depends on structurally grouped work, not just states and labels. Verify that the assignment actually landed in the deployment's real module-membership surface, not merely that a generic issue update returned success.
 
 This skill is for live improvement loops with real behavioral uncertainty.
 If the task is a trivial one-file fix, use a simpler workflow.
@@ -59,6 +59,7 @@ Then proceed with the matching reference:
 - record success/failure conditions
 - name the current milestone frontier
 - if using Plane Full, assign the milestone and slice to one module immediately
+- if using Plane Full, verify module membership through the deployment's real membership surface when needed, especially if normal issue reads do not echo module linkage
 - record parent / child / predecessor / dependency structure when the control surface supports it
 - record expected evidence artifacts when known in advance (screenshots, logs, JSON samples, test output, deploy proof)
 
@@ -66,6 +67,7 @@ Minimum bar before leaving Document:
 - the hypothesis must be specific enough to be tested or weakened by one bounded action
 - the evidence target must say what signal would directly change your confidence
 - if using Plane Full, the active milestone and slice must already have module assignment
+- if the Plane deployment does not expose module linkage on ordinary issue payloads, confirm via the module-issues relation endpoint or equivalent membership view before treating the board as clean
 - if using a structured tracker such as Plane, the slice should include its parent milestone or umbrella issue and any already-known relations or dependencies
 
 Forbidden:
@@ -73,6 +75,7 @@ Forbidden:
 - hidden scope broadening
 - placeholder slices such as "investigate this" with no testable hypothesis or evidence target
 - leaving Plane milestones or slices unassigned to a module
+- assuming module assignment succeeded without checking the deployment's real membership surface
 
 ### Execute
 - do one narrow action only
@@ -152,6 +155,8 @@ When the chosen control surface supports hierarchy and relations, use them delib
 
 For Plane Full mode specifically:
 - assign every milestone and slice to exactly one module before execution begins
+- do not assume module assignment works through generic issue PATCH fields on every Plane deployment, some deployments require the dedicated module-issues relation endpoint
+- after bulk module assignment, verify membership by listing module issues, not just by checking whether issue PATCH calls returned success
 - set the active slice under its parent milestone or umbrella work item when appropriate
 - add explicit relations for predecessor, successor, blocked-by, blocks, duplicate, or peer linkage when they clarify the audit trail
 - keep the ticket body or comments self-explanatory even when relations exist, so exported or copied records still make sense
