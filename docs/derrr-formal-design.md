@@ -402,6 +402,7 @@ Important rule:
 - Plane is a full installation mode, not a universal dependency of DERRR.
 
 Structured tracker rule:
+- assign every milestone and slice to exactly one module before execution begins
 - use native hierarchy when available
 - use native relations and dependencies when available
 - attach or stably reference important evidence artifacts from the ticket
@@ -450,6 +451,7 @@ Should eventually include:
 
 DERRR should encode explicit anti-drift rules, including:
 - do not execute before the slice is documented
+- do not leave Plane milestones or slices unassigned to a module
 - do not tune while correctness is unresolved
 - do not broaden scope mid-slice without updating the control state
 - do not treat helper agents as control-layer replacements

@@ -26,6 +26,8 @@ Simple nesting:
 
 Do not execute before the active slice is recorded in the chosen control surface.
 
+If the control surface is Plane Full, every milestone and slice must be assigned to exactly one module before execution begins. Module assignment is mandatory because objective progress visibility depends on structurally grouped work, not just states and labels.
+
 This skill is for live improvement loops with real behavioral uncertainty.
 If the task is a trivial one-file fix, use a simpler workflow.
 
@@ -56,18 +58,21 @@ Then proceed with the matching reference:
 - record the execution boundary
 - record success/failure conditions
 - name the current milestone frontier
+- if using Plane Full, assign the milestone and slice to one module immediately
 - record parent / child / predecessor / dependency structure when the control surface supports it
 - record expected evidence artifacts when known in advance (screenshots, logs, JSON samples, test output, deploy proof)
 
 Minimum bar before leaving Document:
 - the hypothesis must be specific enough to be tested or weakened by one bounded action
 - the evidence target must say what signal would directly change your confidence
+- if using Plane Full, the active milestone and slice must already have module assignment
 - if using a structured tracker such as Plane, the slice should include its parent milestone or umbrella issue and any already-known relations or dependencies
 
 Forbidden:
 - implementation before documentation exists
 - hidden scope broadening
 - placeholder slices such as "investigate this" with no testable hypothesis or evidence target
+- leaving Plane milestones or slices unassigned to a module
 
 ### Execute
 - do one narrow action only
@@ -146,6 +151,7 @@ Ask:
 When the chosen control surface supports hierarchy and relations, use them deliberately.
 
 For Plane Full mode specifically:
+- assign every milestone and slice to exactly one module before execution begins
 - set the active slice under its parent milestone or umbrella work item when appropriate
 - add explicit relations for predecessor, successor, blocked-by, blocks, duplicate, or peer linkage when they clarify the audit trail
 - keep the ticket body or comments self-explanatory even when relations exist, so exported or copied records still make sense
