@@ -49,6 +49,8 @@ Then proceed with the matching reference:
 - Vault → read `references/quickstart-obsidian.md`
 - Plane Full → read `references/full-install-plane.md`
 
+If Plane Full work will touch the API directly, also read `references/plane-api-usage.md` before making tracker writes.
+
 ## What to do in each phase
 
 ### Document

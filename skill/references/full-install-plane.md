@@ -50,6 +50,15 @@ For each important artifact, note:
 - when it was captured
 - which slice / phase it belongs to
 
+## API reference
+
+Before making direct Plane API writes, read `references/plane-api-usage.md`.
+It now carries:
+- official Plane developer-doc entry points
+- the core DERRR issue/comment/module endpoints
+- the deployment-proven distinction between URL links and issue relations
+- the verification checklist that prevents "PATCH looked fine but membership/relation never landed" mistakes
+
 ## Good discipline
 
 - keep milestone notes up to date

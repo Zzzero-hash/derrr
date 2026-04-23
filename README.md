@@ -124,6 +124,9 @@ You can use it with:
 - **Markdown** for the lightest repo-native version
 - **Obsidian** if you already live in a vault
 - **Plane** if you want explicit lifecycle state, parent/sub-work-item structure, relations, and a stronger audit trail
+
+If you use Plane directly through the API, the repo now includes a focused reference for the official developer docs plus the DERRR-relevant endpoints and deployment-proven gotchas:
+- [`skill/references/plane-api-usage.md`](./skill/references/plane-api-usage.md)
 - **the skill** if you want to put the method in front of an assistant
 
 Important:
@@ -137,6 +140,7 @@ Important:
 - **I want the quick pitch** → stay here
 - **I want the full method** → [`docs/derrr-formal-design.md`](./docs/derrr-formal-design.md)
 - **I want the practical assistant version** → [`skill/`](./skill/)
+- **I want the Plane API notes that stop dumb endpoint guessing** → [`skill/references/plane-api-usage.md`](./skill/references/plane-api-usage.md)
 - **I want real field mileage** → [`examples/`](./examples/)
 
 ## Good fit / bad fit
