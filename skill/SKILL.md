@@ -26,6 +26,8 @@ Simple nesting:
 
 Do not execute before the active slice is recorded in the chosen control surface.
 
+If the control surface is Plane Full, Plane is the source of truth for active slice identity, parentage, module assignment, and state. Prefer live Plane reads over memory, branch names, or chat summaries whenever they disagree or might be stale.
+
 If the control surface is Plane Full, every milestone and slice must be assigned to exactly one module before execution begins. Module assignment is mandatory because objective progress visibility depends on structurally grouped work, not just states and labels. Verify that the assignment actually landed in the deployment's real module-membership surface, not merely that a generic issue update returned success.
 
 This skill is for live improvement loops with real behavioral uncertainty.
@@ -51,6 +53,15 @@ Then proceed with the matching reference:
 
 If Plane Full work will touch the API directly, also read `references/plane-api-usage.md` before making tracker writes.
 
+Before naming or resuming a Plane slice, ground yourself in live tracker state first. Verify:
+- the exact active issue id and title
+- its current state
+- its parent milestone or umbrella item
+- its module membership
+- any predecessor/successor or dependency links that matter to the current slice
+
+If live Plane state cannot be queried, do not confidently invent or rename slice identity from memory alone. Say that live tracker access is missing and ask for it or for a user-confirmed issue id.
+
 ## What to do in each phase
 
 ### Document
@@ -69,6 +80,7 @@ Minimum bar before leaving Document:
 - the hypothesis must be specific enough to be tested or weakened by one bounded action
 - the evidence target must say what signal would directly change your confidence
 - if using Plane Full, the active milestone and slice must already have module assignment
+- if using Plane Full, the active slice identity must be confirmed from live tracker state rather than inferred from memory, branch names, or stale ticket prefixes
 - if the Plane deployment does not expose module linkage on ordinary issue payloads, confirm via the module-issues relation endpoint or equivalent membership view before treating the board as clean
 - if using a structured tracker such as Plane, the slice should include its parent milestone or umbrella issue and any already-known relations or dependencies
 
@@ -78,6 +90,7 @@ Forbidden:
 - placeholder slices such as "investigate this" with no testable hypothesis or evidence target
 - leaving Plane milestones or slices unassigned to a module
 - assuming module assignment succeeded without checking the deployment's real membership surface
+- inferring active Plane issue identity from memory when live tracker reads are available or expected
 
 ### Execute
 - do one narrow action only
@@ -156,6 +169,7 @@ Ask:
 When the chosen control surface supports hierarchy and relations, use them deliberately.
 
 For Plane Full mode specifically:
+- treat live Plane reads as authoritative for current slice identity, state, parentage, and linkage
 - assign every milestone and slice to exactly one module before execution begins
 - do not assume module assignment works through generic issue PATCH fields on every Plane deployment, some deployments require the dedicated module-issues relation endpoint
 - after bulk module assignment, verify membership by listing module issues, not just by checking whether issue PATCH calls returned success
@@ -163,6 +177,7 @@ For Plane Full mode specifically:
 - add explicit relations for predecessor, successor, blocked-by, blocks, duplicate, or peer linkage when they clarify the audit trail
 - keep the ticket body or comments self-explanatory even when relations exist, so exported or copied records still make sense
 - do not rely on chat-only lineage if Plane can store it directly
+- do not pick branch names, PR titles, or proof claims from recalled issue numbers until the live Plane issue has been confirmed
 
 ## Evidence artifacts
 
@@ -201,6 +216,7 @@ If any of these appear, stop and tighten the loop before continuing:
 - research discovers a different observability layer but tries to keep the same slice anyway
 - research discovers an adjacent same-layer issue and tries to absorb it into the same slice anyway
 - successor work exists only in chat, not in the control surface
+- branch names or PR titles carry stale tracker ids that were never verified against live Plane
 - hierarchy or relations exist only in prose even though the chosen tracker supports them directly
 - important screenshots, logs, or samples exist only in chat and are not referenced in the control surface
 - helper agent opinion is treated as authoritative without review

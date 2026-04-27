@@ -120,6 +120,18 @@ Important local lesson:
 - `/issues/{issue_id}/links/` returning `400 {"url": ["This field is required."]}` means you hit the URL-link endpoint by mistake
 - for ticket-to-ticket relations, use `/relations/`
 
+## Ground-truth preflight
+
+Before naming, resuming, or renaming a Plane slice from chat context:
+1. auth probe succeeds
+2. fetch the live issue record you believe is active
+3. confirm exact issue id, title, and state
+4. confirm parent milestone or umbrella item
+5. confirm module membership through `module-issues/` when module linkage matters
+6. confirm any predecessor/successor/dependency links you plan to mention
+
+If this preflight cannot be completed, treat tracker identity as unverified rather than guessing from memory, branch names, or prior chat summaries.
+
 ## Cheap verification checklist
 
 Before assuming a Plane write worked:
@@ -132,7 +144,7 @@ Before assuming a Plane write worked:
 ## DERRR-specific rule of thumb
 
 For Plane Full, prefer this sequence:
-1. create slice issue
+1. read the live issue or create it if it does not exist yet
 2. set/verify parent if needed
 3. bind module via `module-issues/`
 4. do the work

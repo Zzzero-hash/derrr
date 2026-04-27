@@ -18,6 +18,16 @@ Finished slices should be moved to Done.
 Active soak/review should be explicit when it matters.
 Follow-on work should be created as a successor issue, not implied only in comments.
 Use Plane parent/sub-work-item structure and relations/dependencies when available so lineage is visible in the tracker itself, not just in prose.
+Treat live Plane state as the source of truth for issue identity, state, parentage, and module membership.
+
+Before resuming or naming a slice, verify the live tracker record for:
+- issue id and title
+- state
+- parent milestone or umbrella issue
+- module membership
+- relevant predecessor/successor/dependency links
+
+If you cannot read live Plane state, pause before inventing certainty from memory, branch names, or chat summaries.
 
 ## Structure guidance
 
@@ -68,6 +78,7 @@ It now carries:
 - create restart anchors when one phase ends and another frontier begins
 - preserve predecessor/successor links when closing and reopening work
 - attach or reference important evidence instead of leaving it stranded in chat or shell history
+- verify the live issue before choosing branch names, PR titles, or proof comments that mention tracker ids
 
 ## Tradeoff
 
